@@ -8,14 +8,73 @@ body {
   margin: 0;
   background: #b8e986;
 }
+.app {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
 
+.app__form {}
 .app__row {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  width: 550px;
+  margin: 0 auto;
+  padding-top: 30px;
+  justify-content: space-between;
+}
+.app__label {
+  width: 100%;
+  color: #417505;
+  margin-bottom: 15px;
 }
 .app__field,
 .app__search-btn {
   font: inherit;
-  margin-top: 1em;
+}
+.app__field { 
+  flex-grow: 1;
+  color: black;
+  border: 1px solid #262626;
+  height: 30px;
+  padding: 0 15px;
+  font-weight: bold;
+}
+.app__search-btn {
+  margin-left: 20px;
+  background: #417505;
+  color: White;
+  line-height: 30px;
+  padding:0 30px;
+  border: 0;
+}
+.app__canvas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.name {
+  width: 100%;
+}
+
+
+.name {
+  padding: 0 20px;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.name__item {
+  flex-grow: 1;
+  background: white;
+  box-shadow: 0 1px 7px rgba(0,0,0,.2);
+  text-align: center;
+  font-size: 3em;
+  color: #417505;
+  text-transform: uppercase;
+  padding: 1em 0;
+}
+.name__item + .name__item {
+  margin-left: 20px;
 }
