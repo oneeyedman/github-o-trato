@@ -5,8 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Github o trato - ejercicio extra de API</title>
+  <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
+  <main class="app">
+    
+    <section class="app__form">
+      <div class="app__row">
+        <label for="u-name" class="app__label">Escribe el nick de una usuaria de GitHub</label>
+        <input type="text" class="app__field" name="u-name" id="u-name">
+        <button class="app__search-btn" type="button">Buscar</button>
+      </div>
+    </section>
+
+    <section class="app__canvas">
+      <ul class="name"></ul>
+    </section>
+  </main>
   <script src="assets/js/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+/*
+verde claro: #b8e986
+verde no tan claro: #417505
+*/
+body {
+  font-family: 'Roboto Slab', serif;
+  margin: 0;
+  background: #b8e986;
+}
+
+.app__row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.app__field,
+.app__search-btn {
+  font: inherit;
+  margin-top: 1em;
+}
